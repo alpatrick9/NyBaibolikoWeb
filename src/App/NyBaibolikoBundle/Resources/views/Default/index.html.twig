@@ -2,7 +2,7 @@
 {% block title %}Ny Baiboliko{% endblock %}
 {% block body %}
     <h2>{{ title }}</h2>
-    <table>
+    <table class="table_content">
         {% for verset in versets %}
             {% if(verset.note != null) %}
                 <tr>

@@ -3,9 +3,7 @@
 <head>
     <title>{% block title %}Welcome!{% endblock %}</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="{{ absolute_url(asset('css/reset.css')) }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ absolute_url(asset('')) }}css/style.css" type="text/css" media="all">
-    <link rel="stylesheet" href="{{ absolute_url(asset('css/ie.css')) }}" type="text/css" media="all">
     <![endif]-->
     <!--[if lt IE 8]>
     <div style=' clear: both; text-align:center; position: relative;'>
@@ -26,9 +24,7 @@
     </header>
     <!--header end-->
     <div class="box">
-        <div class="wrapper">
             {% block body %}{% endblock %}
-        </div>
     </div>
 </div>
 

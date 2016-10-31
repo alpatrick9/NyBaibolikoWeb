@@ -1,0 +1,7 @@
+ny_baiboliko:
+    resource: "@NyBaibolikoBundle/Resources/config/routing.yml"
+    prefix:   /baiboly
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

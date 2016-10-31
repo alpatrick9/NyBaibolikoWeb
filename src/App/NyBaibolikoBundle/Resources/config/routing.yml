@@ -1,0 +1,3 @@
+ny_baiboliko_app:
+    resource: "@NyBaibolikoBundle/Controller/"
+    type:     annotation

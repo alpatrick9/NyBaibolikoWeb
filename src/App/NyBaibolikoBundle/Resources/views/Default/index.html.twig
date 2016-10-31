@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+{% block title %}Ny Baiboliko{% endblock %}
+{% block body %}
+    <h2>{{ title }}</h2>
+    <table>
+        {% for verset in versets %}
+            {% if(verset.note != null) %}
+                <tr>
+                    <td> <h3><i>{{ verset.note }}</i></h3></td>
+                </tr>
+            {% endif%}
+            <tr>
+                <td><b>{{ verset.versetNumber }}.</b> {{ verset.text }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

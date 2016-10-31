@@ -244,15 +244,6 @@ header {
     display: block
 }
 
-.promos span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url(../images/border1.gif) 0 0 no-repeat;
-    width: 100%;
-    height: 100%
-}
-
 .promos .last {
     margin-right: 0
 }
@@ -294,13 +285,6 @@ header {
 
 .list1 li {
     padding-bottom: 5px
-}
-
-.list1 a {
-    color: #4d4d4d;
-    text-decoration: underline;
-    padding-left: 12px;
-    background: url(../images/marker_1.gif) 0 5px no-repeat
 }
 
 figure {

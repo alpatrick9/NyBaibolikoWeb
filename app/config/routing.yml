@@ -1,6 +1,6 @@
 ny_baiboliko:
     resource: "@NyBaibolikoBundle/Resources/config/routing.yml"
-    prefix:   /baiboly
+    prefix:   /
 
 app:
     resource: "@AppBundle/Controller/"

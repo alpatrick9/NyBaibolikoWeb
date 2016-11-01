@@ -2,9 +2,9 @@
 parameters:
     database_host: localhost
     database_port: null
-    database_name: u878447317_bible
-    database_user: u878447317_root
-    database_password: root123
+    database_name: baiboly_db
+    database_user: root
+    database_password: null
     mailer_transport: smtp
     mailer_host: 127.0.0.1
     mailer_user: null

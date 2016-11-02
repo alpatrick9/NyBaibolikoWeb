@@ -150,3 +150,7 @@ header {
     min-height: 25px
 }
 
+#book_chap, #book_versetFirst, #book_versetLast {
+    width: 70px;
+}
+

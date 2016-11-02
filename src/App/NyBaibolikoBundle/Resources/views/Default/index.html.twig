@@ -1,6 +1,27 @@
 {% extends "::base.html.twig" %}
 {% block title %}Ny Baiboliko{% endblock %}
 {% block body %}
+    {% if error_message is defined %}
+        <p style="color: red "> {{ error_message }}</p>
+    {% endif %}
+    <div>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>{{ form_widget(form.title) }}</td>
+                    <td>faha</td>
+                    <td>{{ form_widget(form.chap) }}</td>
+                    <td>atomboka amin'ny</td>
+                    <td>{{ form_widget(form.versetFirst) }}</td>
+                    <td>hatramin'ny</td>
+                    <td>{{ form_widget(form.versetLast) }}</td>
+                    <td>
+                        <input type="submit" value="Aseho">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
     <h2>{{ title }}</h2>
     <table class="table_content">
         {% for verset in versets %}
@@ -11,6 +32,10 @@
             {% endif%}
             <tr>
                 <td><b>{{ verset.versetNumber }}.</b> {{ verset.text }}</td>
+            </tr>
+            {% else %}
+            <tr>
+                <td><p style="color: red ">Tsy misy io Soratra Masina mifanaraka amin'io adiresy nampidirina io</p></td>
             </tr>
         {% endfor %}
     </table>
